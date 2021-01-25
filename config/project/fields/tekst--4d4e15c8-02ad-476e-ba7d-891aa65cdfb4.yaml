@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: bd70741b-507a-465d-8142-f42a02ec16c3
+handle: tekst
+instructions: ''
+name: Tekst
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_tekst}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

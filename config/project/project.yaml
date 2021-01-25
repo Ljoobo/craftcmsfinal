@@ -1,0 +1,19 @@
+assets:
+  tempVolumeUid: 8403cece-ffd6-4601-8d95-cbe0f57885cf
+dateModified: 1611522081
+email:
+  fromEmail: ljubojevic.dario@gmail.com
+  fromName: craftcmsfinal
+  transportType: craft\mail\transportadapters\Sendmail
+system:
+  edition: solo
+  live: true
+  name: craftcmsfinal
+  schemaVersion: 3.5.13
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: sport
+name: Sport
+propagationMethod: all
+siteSettings:
+  5767ef54-af4c-422c-8628-8c8f024eef96:
+    enabledByDefault: true
+    hasUrls: true
+    template: general
+    uriFormat: sport
+type: single

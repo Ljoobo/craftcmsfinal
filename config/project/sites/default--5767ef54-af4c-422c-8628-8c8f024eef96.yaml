@@ -1,0 +1,9 @@
+baseUrl: '@web'
+enabled: true
+handle: default
+hasUrls: true
+language: en-US
+name: craftcmsfinal
+primary: true
+siteGroup: b1692a26-5b78-421c-abc5-dbbf14cd6107
+sortOrder: 1

@@ -1,0 +1,40 @@
+field: 7b08d9ba-8697-43f3-a5a6-c077601b74e4
+fieldLayouts:
+  e455c87a-2fa3-4958-a220-44334c899bf8:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: f7ad1b46-5c28-4483-b2c8-d63838ed2355
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  f7ad1b46-5c28-4483-b2c8-d63838ed2355:
+    contentColumnType: text
+    fieldGroup: null
+    handle: moduleVideo
+    instructions: ''
+    name: 'Module Video'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: moduleVideo
+name: 'Module Video'
+sortOrder: 2

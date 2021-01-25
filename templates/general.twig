@@ -1,0 +1,15 @@
+{% extends "index" %}
+
+{% block content %} 
+
+    <h1>{{ entry.title }}</h1>
+    
+   {% for module in entry.modules.all() %}
+    
+         {% include '_modules/moduleText.twig' %}
+         {% include '_modules/moduleVideo.twig' %}
+       
+
+     {% endfor %} 
+
+{% endblock %}
