@@ -1,0 +1,73 @@
+   
+   {% extends "index" %}
+   
+    {% block content %} 
+
+<section>
+
+  <div class=divHomeLeft>
+
+{% set vijesti = craft.app.sections.getSectionByHandle("vijesti") %}
+
+  {% for naslov in craft.entries.section("vijesti").all()  %}
+      <h1><a href="{{ vijesti|raw }}" target=_self class=a-link> {{ naslov.title }} </a></h1>
+  {% endfor %}
+  
+
+      {% for module in entry.modules.all() %}
+    
+         {% include '_modules/moduleText.twig' %}
+         {% include '_modules/moduleVideo.twig' %}
+        
+
+        {% endfor %} 
+
+      <hr>
+
+  </div> <br>
+</section>
+
+<aside>
+   <div>
+    <img src="assets/images/barcelona.jpeg" height=446 width=645>
+
+  
+    {% set sport = craft.app.sections.getSectionByHandle("sport") %}
+
+    {% for naslov in craft.entries.section("sport").all()  %}
+      <h1><a href="{{ sport|raw }}" target=_self class=a-link> {{ naslov.title }} </a></h1>
+
+    {% set myEntryQuery = craft.entries()
+      .section("Sport")
+      .limit(10)
+       %}
+      
+    {% set entries = myEntryQuery.all() %}
+    {% for entry in entries %}
+       <p><h3> {{ entry.description }} </h3><p>
+    {% endfor %}
+
+   </div><hr>
+   {% endfor %}
+</aside>
+  <div>
+    <img src="assets/images/lg.jpg" height=900 width=1550 stylesheet="float: right">
+
+    {% set novac = craft.app.sections.getSectionByHandle("novac") %}
+
+    {% for naslov in craft.entries.section("novac").all()  %}
+      <h1><a href="{{ novac|raw }}" target=_self class=a-link> {{ naslov.title }} </a></h1>
+  {% endfor %}
+
+  {% set myEntryQuery = craft.entries()
+      .section("Novac")
+      .limit(10)
+       %}
+      
+    {% set entries = myEntryQuery.all() %}
+    {% for entry in entries %}
+        </p><h3> {{ entry.description }} </h3></p>
+    {% endfor %}
+
+  </div>
+    {% endblock %}
